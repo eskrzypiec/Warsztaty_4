@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="static/main.css">
+    <title>Books</title>
+</head>
+<body>
+<div class="container col-md-8">
+    <h2>Książki</h2>
+    <div class="container content-section">
+        <form method="post" class="form-post">
+            <fieldset class="form-group">
+                <label class="border-bottom mb-4 form">Dodaj książkę</label>
+                <div id="div_id_author" class="form-group">
+                    <label for="id_author" class="col-form-label  requiredField">Autor</label>
+                    <div class="">
+                        <input type="text" name="author" maxlength="200" class="textinput textInput form-control"
+                               required id="id_author">
+                    </div>
+                </div>
+                <div id="div_id_title" class="form-group">
+                    <label for="id_title" class="col-form-label  requiredField">Tytuł</label>
+                    <div class="">
+                        <input type="text" name="title" maxlength="200" class="textinput textInput form-control"
+                               required id="id_title">
+                    </div>
+                </div>
+                <div id="div_id_isbn" class="form-group">
+                    <label for="id_isbn" class="col-form-label  requiredField">ISBN</label>
+                    <div class="">
+                        <input name="isbn" maxlength="17" class="textinput textInput form-control" required
+                               id="id_isbn">
+                    </div>
+                </div>
+                <div id="div_id_publisher" class="form-group">
+                    <label for="id_publisher" class="col-form-label  requiredField">Osoba publikująca</label>
+                    <div class="">
+                        <input name="publisher" maxlength="200" class="textinput textInput form-control" required
+                               id="id_publisher">
+                    </div>
+                </div>
+                <div id="div_id_genre" class="form-group">
+                    <label for="id_genre" class="col-form-label  requiredField">Gatunek</label>
+                    <div class="">
+                        <select name="genre" required id="id_genre">
+                            <option value="1">Romans</option>
+                            <option value="2">Obyczajowa</option>
+                            <option value="3">Sci-fi i fantasy</option>
+                            <option value="4">Literatura faktu</option>
+                            <option value="5">Popularnonaukowa</option>
+                            <option value="6">Poradnik</option>
+                            <option value="7">Kryminał, sensacja</option>
+                        </select>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="form-group">
+                <button id="submit" class="btn btn-outline-info" type="submit">Dodaj</button>
+            </div>
+        </form>
+    </div>
+    <h3>Spis książek</h3>
+    <div id="name" class="container content-section">
+    </div>
+</div>
+<script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+<script src="static/app.js"></script>
+</body>
+</html>
